@@ -18,8 +18,8 @@ $ go install github.com/aniruddha0pandey/karvachauth
 ## [Setting Github Tokens](https://github.com/settings/tokens/new)
 Select all scopes for `repo`, `admin:org`, `notifications` and `user` with note `Access Token for karvachauth`.
 ```
-$ echo "{paste token from Github here}" >> token
-$ echo "token" >> .gitignore
+$ echo "{paste token from Github here}" >> GITHUB_TOKEN
+$ echo "GITHUB_TOKEN" >> .gitignore
 ```
 
 ## Usage
