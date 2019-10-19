@@ -1,0 +1,12 @@
+
+
+
+// # curl -u "aniruddh0pandey" https://api.github.com
+
+// curl -i -u "aniruddh0pandey:password" https://api.github.com/users/aniruddh0pandey
+
+// # curl -i https://api.github.com/users/aniruddh0pandey/SaddaPind
+
+// curl -i -u "yashpathack:password" -X GET -d '' 'https://api.github.com/repos/aniruddh0pandey/SaddaPind/yashpathack'
+
+
