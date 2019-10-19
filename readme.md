@@ -15,11 +15,14 @@ $ git add . && git commit -am "initial commit" && git push
 $ go install github.com/aniruddha0pandey/karvachauth 
 ```
 
-## Setting Github Tokens
+## [Setting Github Tokens](https://github.com/settings/tokens/new)
 Select all scopes for `repo`, `admin:org`, `notifications` and `user` with note `Access Token for karvachauth`.
+```
+$ echo "{paste token from Github here}" >> token
+$ echo "token" >> .gitignore
+```
 
 ## Usage
-```
 $ karvachauth --help
 usage: karvachauth [command] <args>
 
