@@ -16,9 +16,9 @@ $ go install github.com/aniruddha0pandey/karvachauth
 ```
 
 ## [Setting Github Tokens](https://github.com/settings/tokens/new)
-Select all scopes for `repo`, `admin:org`, `notifications` and `user` with note `Access Token for karvachauth`.
+Select all scopes for `repo`, `admin:org`, `notifications` and `user` with note `Access Token - karvachauth`.
 ```
-$ echo "{paste token from Github here}" >> GITHUB_TOKEN
+$ echo "{paste token from Github here excluding curly braces}" >> GITHUB_TOKEN
 $ echo "GITHUB_TOKEN" >> .gitignore
 ```
 
@@ -35,13 +35,14 @@ VERSION:
 	0.0.1
 
 COMMANDS:
-	help, h		Shows a list of commands or help for one command
-	login, l	Enter username password to generate token
-	repos, r	list all current repositories
-	collab, c	list all current collabrators
-	add, a		add collabrators to repositories
+	help			Shows a list of commands or help for one command
+	login			Enter username password to OAuth token
+	repos			list all current repositories
+	collab			list all current collabrators
+	add				add collabrators to repositories
+	remove			remove collabrators from repositories
 
 GLOBAL OPTIONS:
-	--help, -h     show help
-	--version, -v  print the version
+	--help, -h		show help
+	--version, -v	print the version
 ```
