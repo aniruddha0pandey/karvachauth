@@ -15,9 +15,9 @@ $ declare -a commands=("login" "repos" "collab" "add" "remove")
 $ for i in "${commands[@]}"; do cobra add $i; done
 $ touch server.go README.md
 $ go mod init github.com/aniruddha0pandey/karvachauth
-$ go build ./build
+$ go build ./bin
 $ go install github.com/aniruddha0pandey/karvachauth
-$ echo "build/" >> .gitignore
+$ echo "bin/" >> .gitignore
 $ hub init && hub create
 $ hub commit -am "initial commit" && hub push
 ```
