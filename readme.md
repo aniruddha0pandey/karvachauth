@@ -23,7 +23,8 @@ $ hub commit -am "initial commit" && hub push
 ```
 
 ## [Setting OAuth Client](https://github.com/settings/developers)
-|---|---|
+| | |
+|-|-|
 | Scopes | `repo` `admin:org` `notifications` `user` |
 | Homepage URL | http://localhost:6969/home |
 | Authorization callback URL | http://localhost:6969/oauth/callback |
