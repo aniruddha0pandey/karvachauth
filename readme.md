@@ -31,7 +31,9 @@ $ hub commit -am "initial commit" && hub push
 
 ## Usage
 ```
-$ karvachauth --help
+$ karvachauth login
+$ karvachauth add GITHUB-USERNAME REPOSITORY-NAME
+$ karvachauth help
 NAME:
 	karvachauth - A command line utility to add collaborators to GitHub repositories
 
