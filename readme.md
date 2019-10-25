@@ -7,7 +7,7 @@ A command line utility to add collaborators to GitHub repositories.
 - Setup the [GOPATH](https://github.com/golang/go/wiki/SettingGOPATH) variable to `export PATH=$PATH:$(go env GOPATH)/bin`.
 
 ## [Setting Project Layout](https://github.com/golang-standards/project-layout)
-```
+```bash
 $ go get github.com/spf13/cobra/cobra
 $ mkdir karvachauth && cd ./karvachauth
 $ cobra init --pkg-name github.com/aniruddha0pandey/karvachauth
@@ -30,7 +30,7 @@ $ hub commit -am "initial commit" && hub push
 | Authorization callback URL | http://localhost:6969/oauth/callback |
 
 ## Usage
-```
+```bash
 $ karvachauth login
 $ karvachauth add GITHUB-USERNAME REPOSITORY-NAME
 $ karvachauth help
