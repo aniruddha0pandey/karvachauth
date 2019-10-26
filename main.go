@@ -1,21 +1,46 @@
 package main
 
 import (
-    "bufio"
     "context"
     "fmt"
     "os"
-    "strings"
-    "syscall"
+    "log"
+    // "net/http"
 
+    "golang.org/x/oauth2"
+    // githuboauth  "golang.org/x/oauth2/github"
     "github.com/google/go-github/v28/github"
-    "golang.org/x/crypto/ssh/terminal"
+
+    "github.com/joho/godotenv"
 )
 
 func main() {
-    var username string
-    fmt.Print("Enter GitHub username: ")
-    fmt.Scanf("%s", &username)
+    // Load Environment Variables
+    if godotenv.Load() != nil { 
+        log.Fatal("Error loading .env file") 
+    }
+
+    // oauthStateString := os.Getenv("OAUTH_STATE")
+    // oauthConf := &oauth2.Config{
+    //     ClientID:     os.Getenv("CLIENT_ID"),
+    //     ClientSecret: os.Getenv("CLIENT_SECRET"),
+    //     Scopes:       []string{"admin:org", "repo", "user", "notifications"},
+    //     Endpoint:     githuboauth.Endpoint,
+    // }
+
+    ctx := context.Background()
+    ts := oauth2.StaticTokenSource( &oauth2.Token{ AccessToken: os.Getenv("ACCESS_TOKEN") } )
+    tc := oauth2.NewClient(ctx, ts)
+
+    client := github.NewClient(tc)
+
+    repos, _, err := client.Repositories.List(ctx, "", nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    fmt.Println(repos)
+    
 }
 
 
@@ -66,5 +91,5 @@ func main() {
 
 
 
-// tmp access_token=ad1c3191ecc9be99f550b3499539915a0490fe5c
+// tmp access_token=4b78a2da2ac65ad8e8b3407befe8e61e551420d5
 

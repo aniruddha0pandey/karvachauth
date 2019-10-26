@@ -20,9 +20,11 @@ $ go install github.com/aniruddha0pandey/karvachauth
 $ echo "bin/" >> .gitignore
 $ hub init && hub create
 $ hub commit -am "initial commit" && hub push
+$ echo "OAUTH_STATE=$(openssl rand -base64 12)" >> .env
 ```
 
 ## [Setting OAuth Client](https://github.com/settings/developers)
+Save `Client ID` and `Client Secret` in `.env` file.
 | | |
 |-|-|
 | Scopes | `repo` `admin:org` `notifications` `user` |
