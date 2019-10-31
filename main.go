@@ -12,6 +12,8 @@ import (
     "github.com/google/go-github/v28/github"
 
     "github.com/joho/godotenv"
+
+    "github.com/aniruddha0pandey/karvachauth/cmd"
 )
 
 func main() {
@@ -39,7 +41,9 @@ func main() {
         log.Fatal(err)
     }
 
-    fmt.Println(repos)
+    cmd.Execute()
+
+    // fmt.Println(repos)
     
 }
 

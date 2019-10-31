@@ -1,3 +1,5 @@
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `This is the v2 of Karvachauth & v1 is located in v1 directory.`
+
 # Karvachauth
 A command line utility to add collaborators to GitHub repositories.
 
