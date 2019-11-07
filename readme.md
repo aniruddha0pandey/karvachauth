@@ -26,7 +26,7 @@ $ echo "OAUTH_STATE=$(openssl rand -base64 12)" >> .env
 ```
 
 ## [Setting OAuth Client](https://github.com/settings/developers)
-Save `Client ID` and `Client Secret` in `.env` file.
+Save `Client ID` and `Client Secret` in `.env` file.  
 | | |
 |-|-|
 | Scopes | `repo` `admin:org` `notifications` `user` |
