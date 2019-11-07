@@ -53,7 +53,7 @@ COMMANDS:
 	login			Enter username password to OAuth token
 	repos			list all current repositories
 	collab			list all current collabrators
-	add				add collabrators to repositories
+	add			add collabrators to repositories
 	remove			remove collabrators from repositories
 
 GLOBAL OPTIONS:
