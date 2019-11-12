@@ -1,0 +1,12 @@
+### links
+- https://golang.org/doc/articles/wiki/
+- https://github.com/palantir/go-githubapp
+- https://github.com/gorilla/mux
+- https://github.com/google/go-github
+- https://github.com/bradleyfalzon/ghinstallation
+- https://github.com/spf13/cobra
+- https://github.com/gorilla/handlers
+- https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/
+- http://localhost:6969/oauth/callback?code=f867948d80c5ceee1b6c
+- https://developer.github.com/v3/repos/collaborators/
+- https://blog.kowalczyk.info/article/f/accessing-github-api-from-go.html
